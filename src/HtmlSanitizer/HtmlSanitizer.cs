@@ -469,9 +469,10 @@ namespace Ganss.XSS
                         RemoveAttribute(tag, attribute, RemoveReason.NotAllowedValue);
                     else
                     {
+                        // Do not escape < and > because AngleSharp will escape the '&' when ToHtml is called later.
                         // escape attribute value
-                        var val = attribute.Value.Replace("<", "&lt;").Replace(">", "&gt;");
-                        tag.SetAttribute(attribute.Name, val);
+                        //var val = attribute.Value.Replace("<", "&lt;").Replace(">", "&gt;");
+                        //tag.SetAttribute(attribute.Name, val);
                     }
                 }
             }

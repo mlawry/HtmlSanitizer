@@ -13,4 +13,4 @@ using System.Runtime.InteropServices;
 
 #endif
 
-[assembly: AssemblyVersion("3.0.0.0")]
+[assembly: AssemblyVersion("3.0.2016.0822")]
